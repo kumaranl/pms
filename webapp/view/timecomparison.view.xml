@@ -1,0 +1,62 @@
+<mvc:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:html="http://www.w3.org/1999/xhtml" controllerName="com.customdev.pms.controller.timecomparison">
+	<App>
+		<pages>
+			<Page title="{i18n>title}">
+				<content>
+					<IconTabBar id="__bar0">
+						<items>
+							<IconTabFilter text="Comparison As of Jan 2020" showAll="true" id="__filter0">
+								<content>
+									<Table noDataText="No Data Found" id="timecomptable" items="{ path : '/' }" headerText="TimeSheet data as of Jan 2020">
+										<items>
+											<ColumnListItem id="__item3">
+												<cells>
+													<Text text="{empId}" id="__text0"/>
+													<Text text="{EmployeeName}" id="__text1"/>
+													<Text text="{WeekEnd}" id="__text2"/>
+													<Text text="{billdays}" id="__text3"/>
+													<Text text="{weeklydays}" id="__text4"/>
+												</cells>
+											</ColumnListItem>
+										</items>
+										<columns>
+											<Column id="__column0">
+												<header>
+													<Label text="Employee ID" id="__label0"/>
+												</header>
+											</Column>
+											<Column id="__column1">
+												<header>
+													<Label text="Employee Name" id="__label1"/>
+												</header>
+											</Column>
+											<Column id="__column2">
+												<header>
+													<Label text="Weekend" id="__label2"/>
+												</header>
+											</Column>
+											<Column id="__column3">
+												<header>
+													<Text text="CG TimeSheet Days" id="__text6"/>
+												</header>
+											</Column>
+											<Column id="__column4">
+												<header>
+													<Text text="Volvo CATS Days" id="__text7"/>
+												</header>
+											</Column>
+										</columns>
+									</Table>
+								</content>
+							</IconTabFilter>
+							<IconTabFilter text="Open" count="10" icon="sap-icon://task" iconColor="Critical" id="__filter4">
+							    <content>
+							        <sap.ui.comp.smarttable:SmartTable width="100%" direction="Column" fitContainer="true" tableType="ResponsiveTable" header="Smart Table" enableAutoBinding="true" xmlns:sap.ui.comp.smarttable="sap.ui.comp.smarttable" id="__table0"/>
+							    </content>
+							</IconTabFilter></items>
+					</IconTabBar>
+				</content>
+			</Page>
+		</pages>
+	</App>
+</mvc:View>

@@ -1,0 +1,96 @@
+<mvc:View xmlns:html="http://www.w3.org/1999/xhtml" xmlns:core="sap.ui.core" xmlns:l="sap.ui.layout" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" controllerName="com.customdev.pms.controller.App" displayBlock="true">
+	<App id="pmsApp">
+		<pages>
+			<Page title="{i18n>title}" backgroundDesign="Solid" showSubHeader="false">
+				<footer>
+					<Bar id="__bar0">
+						<contentMiddle>
+							<Label text="" width="100%" id="__label0"/>
+						</contentMiddle>
+					</Bar>
+				</footer>
+				<customHeader>
+					<Bar id="__bar1">
+						<contentMiddle>
+							<Text text="Capgemini Volvo AB Account" id="__text0"/>
+						</contentMiddle>
+						<contentLeft>
+							<!--	<Button text="Button" width="100px" id="__button0" press="onNavToHome"/>
+						-->
+						</contentLeft>
+					</Bar>
+				</customHeader>
+				<content>
+					<IconTabBar id="__bar2">
+						<items>
+							<IconTabFilter text="Home" icon="sap-icon://home" iconColor="Neutral" id="__filter1">
+								<content>
+									<l:VerticalLayout id="containerLayout" width="100%">
+										<l:BlockLayout id="BlockLayout" background="{/selectedBackground}">
+											<l:BlockLayoutRow accentCells="Accent1">
+												<l:BlockLayoutCell id="Accent1" width="2" title="Left aligned heading">
+													<Text text="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr."/>
+													<Link text="This is a title link" href="https://openui5.hana.ondemand.com/"/>
+												</l:BlockLayoutCell>
+												<l:BlockLayoutCell title="This is just a title">
+													<Text text="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr."/>
+												</l:BlockLayoutCell>
+												<l:BlockLayoutCell titleAlignment="End" title="End aligned heading">
+													<Text text="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua."/>
+													<Link text="This is a title link - wrapping true" href="https://openui5.hana.ondemand.com/" wrapping="true"/>
+												</l:BlockLayoutCell>
+											</l:BlockLayoutRow>
+										</l:BlockLayout>
+									</l:VerticalLayout>
+								</content>
+							</IconTabFilter>
+							<IconTabFilter text="Open Job Req" icon="sap-icon://account" iconColor="Neutral" id="__filter2">
+								<content>
+									<DisplayListItem type="Navigation" label="List Item" value="Value" id="__item0"/>
+								</content>
+							</IconTabFilter>
+							<IconTabFilter text="Employees" icon="sap-icon://employee-lookup" iconColor="Critical" id="__filter0">
+								<content>
+									<l:FixFlex id="__flex0">
+										<l:fixContent>
+											<Link text="Time Sheet Comparison" id="Timecomp" press="onNavToTimeComp"/>
+											<Table xmlns:html="http://www.w3.org/1999/xhtml" xmlns:core="sap.ui.core" xmlns:l="sap.ui.layout" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" noDataText="No data found" id="emptable" 
+											items="{ path : '/' }">
+												<items>
+													<ColumnListItem id="__item1_copy-emptable-0-emptable-0">
+														<cells>
+															<Text text="{empId}" id="__text6_copy-emptable-0-emptable-0"/>
+															<Text text="{empname}" id="__text7_copy-emptable-0-emptable-0"/>
+															<Text text="{fieldglassname}" id="__text8_copy-emptable-0-emptable-0"/>
+														</cells>
+													</ColumnListItem>
+												</items>
+												<columns>
+													<Column id="__column0">
+														<header>
+															<Label text="Emp ID" id="__label1"/>
+														</header>
+													</Column>
+													<Column id="__column1">
+														<header>
+															<Label text="Emp Name" id="__label2"/>
+														</header>
+													</Column>
+													<Column id="__column2">
+														<header>
+															<Label text="Field Glass Name" id="__label3"/>
+														</header>
+													</Column>
+												</columns>
+											</Table>
+										</l:fixContent>
+									</l:FixFlex>
+								</content>
+							</IconTabFilter>
+						</items>
+					</IconTabBar>
+				</content>
+			</Page>
+		</pages>
+	</App>
+</mvc:View>

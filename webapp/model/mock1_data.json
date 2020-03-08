@@ -1,0 +1,25 @@
+[{
+	"cgID": 1,
+	"empId": 43930,
+	"EmployeeName": "Sibbala, Sunil",
+	"empname": "Reddy Sibbala Sunil",
+	"WeekEnd": "5-Jan-20",
+	"billdays": 1,
+	"weeklydays": 1
+}, {
+	"cgID": 3,
+	"empId": 43930,
+	"EmployeeName": "Sibbala, Sunil",
+	"empname": "Reddy Sibbala Sunil",
+	"WeekEnd": "12-Jan-20",
+	"billdays": 3.5,
+	"weeklydays": 4
+}, {
+	"cgID": 13,
+	"empId": 43930,
+	"EmployeeName": "Sibbala, Sunil",
+	"empname": "Reddy Sibbala Sunil",
+	"WeekEnd": "19-Jan-20",
+	"billdays": 4,
+	"weeklydays": 4
+}]
